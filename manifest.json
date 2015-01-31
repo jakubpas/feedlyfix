@@ -1,0 +1,18 @@
+{
+  "name": "Fix Feedly home view",
+  "version": "0.1",
+  "permissions": [
+    "http://feedly.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "http://feedly.com/*"],
+      "js": ["jquery.js","script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2,
+    "browser_action": {
+        "default_icon": "icon.png"
+    }
+}
